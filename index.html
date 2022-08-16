@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loky's WEB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <section class="Header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="closemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">Our Works</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="Text-box">
+            <h1>Professional Website Creators!</h1>
+            <p>We are the students from chennai institute of technology who can give you the best websites.<br>
+             The languages like Html, Css, JS are we use to create effective websites..!
+            </p>
+            <a href="" class="visit-button">Visit us to know more</a>
+        </div>
+    </section>
+<!-----Java Script for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function closemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+<!----Course--->  
+    <section class="works">    
+        <h1>Works we do</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus illum voluptatem, accusantium cum veritatis impedit ullam alias ipsam facilis in.</p>
+        <div class="row">
+            <div class="task">
+                <h3>Web Developement</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dolores deserunt debitis blanditiis accusamus repellat.</p>
+            </div>
+            <div class="task">
+                <h3>App Developement</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quibusdam officia impedit quia. Repellendus, illum.</p>
+            </div>
+            <div class="task">
+                <h3>Logo Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, eveniet neque vero fuga laborum nostrum.</p>
+        </div>
+    </section>
+</body>
+</html>
