@@ -1,0 +1,196 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Hind Siliguri', sans-serif;
+}
+.Header{
+   min-height: 100vh;
+   width: 100%;
+   background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/WhatsApp\ Image\ 2022-08-15\ at\ 11.31.45\ PM.jpeg);
+   background-size: cover;
+   position: relative;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   padding: 2% 6%;
+}
+nav img{
+   width: 180px;
+   display: flex;
+   height: 50px;
+}
+.nav-links ul li{
+   display: inline-block;
+   flex: 1;
+   position: relative;
+   padding: 8px 12px;
+   list-style: none;
+}
+.nav-links ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: medium;
+}
+.nav-links ul li::after{
+   display: block;
+   content: '';
+   width: 0%;
+   height: 2px;
+   margin: auto;
+   background-color: aqua;
+   transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+.Text-box{
+   width: 90%;
+   text-align: center;
+   color: #fff;
+   position:absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.Text-box h1{
+   font-size: 62px;  
+}
+.Text-box p{
+   font-size: 15px;
+   margin: 10px 0 40px;
+}
+.visit-button{
+   display: inline-block;
+   border:2px solid  #fff;
+   text-decoration:none;
+   color: #fff;
+   cursor: pointer;
+   padding:12px 34px;
+   font-size: 13px;
+   position: relative;
+}
+.visit-button:hover{
+   border: 2px solid blue;
+   background:aqua;
+   transition: 1s;
+}
+nav .fa{
+   display: none;
+}
+@media(max-width:700px){
+   .Text-box h1{
+      font-size: 20px;
+   }
+   .nav-links ul li{
+      display: block;
+   }
+   .nav-links{
+      position: absolute;
+      background-color: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+   }
+   nav .fa{
+      display: block;
+      color: #fff;
+      cursor: pointer;
+      margin: 10px;
+   }
+   .nav-links ul{
+      padding: 30px;
+   }
+}
+/*-----Works-----*/
+.works{
+   width: 80%;
+   text-align: center;
+   padding-top: 100px;
+   margin: auto;
+}
+.works h1{
+   font-size: 36px;
+   font-weight: 600;
+}
+.works p{
+   font-size: 14px;
+   color: #777;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+}
+.row{
+   justify-content: space-between;
+   display: flex;
+   margin-top: 5%;
+}
+.task{
+   flex-basis: 31%;
+   background-color:#fff3f3;
+   border: 10px;
+   margin-bottom:5%;
+   padding: 20px 12px;
+   box-sizing: border-box;
+   transition: 0.5s;
+}
+.task h3{
+   font-weight: 600;
+   margin: 10px 0;
+   text-align: center;
+}
+.task:hover{
+   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+   .row{
+      flex-direction: column;
+   }
+}
+.Techno{
+   background: linear-gradient(grey,black);
+   width: 100%;
+   margin:auto;
+   text-align: center;
+   padding-top: 50px;
+}
+.Techno h1{
+   font-size: 36px;
+   font-weight: 600;
+   color: #fff;
+}
+.Techno p{
+   color:#fff;
+   padding: 10px;
+   line-height: 22px;
+   font-weight: 300;
+   font-size: 14px;
+}
+.tech{
+   width: 100%;
+   flex-basis: 32%;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   padding-bottom: 30px;
+}
+.tech img{
+   width:auto;
+   border-radius: 20px;
+}
+.tech h3{
+   color: #fff;
+   font-weight: 300 ;  
+}
+@media(max-width:700px){
+   .tech img{
+      width: 300px;
+   }
+}
