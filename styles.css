@@ -151,5 +151,46 @@ nav .fa{
    .row{
       flex-direction: column;
    }
-
+}
+.Techno{
+   background: linear-gradient(grey,black);
+   width: 100%;
+   margin:auto;
+   text-align: center;
+   padding-top: 50px;
+}
+.Techno h1{
+   font-size: 36px;
+   font-weight: 600;
+   color: #fff;
+}
+.Techno p{
+   color:#fff;
+   padding: 10px;
+   line-height: 22px;
+   font-weight: 300;
+   font-size: 14px;
+}
+.tech{
+   width: 100%;
+   flex-basis: 32%;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   padding-bottom: 30px;
+}
+.tech img{
+   width:auto;
+   border-radius: 20px;
+}
+.tech h3{
+   color: #fff;
+   font-weight: 300 ;  
+}
+@media(max-width:700px){
+   .tech img{
+      width: 300px;
+   }
 }
